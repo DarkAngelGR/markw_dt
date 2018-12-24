@@ -85,6 +85,7 @@ PRODUCT_PACKAGES += \
     audio_amplifier.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
+    libaacwrapper \
     libaudio-resampler \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -422,3 +423,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.service.adb.enable=1 \
     persist.sys.usb.config=adb \
     ro.logd.size.stats=16M
+
+# Wi-Fi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
