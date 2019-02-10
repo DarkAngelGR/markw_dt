@@ -19,19 +19,23 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common POSP stuff
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+# Inherit some common RevengeOS stuff
+$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/revengeos/config/gsm.mk)
+
+# Inherit some common AOSP stuff.
+IS_PHONE := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_DENSITY := xxhdpi
+TARGET_BOOT_ANIMATION_RES := 1080
+USE_GCAM := true
 
 # Inherit from markw device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Boot animation
-TARGET_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
-
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Xiaomi
-PRODUCT_NAME := potato_markw
+PRODUCT_NAME := revengeos_markw
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_DEVICE := markw

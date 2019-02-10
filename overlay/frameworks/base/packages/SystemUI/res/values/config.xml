@@ -21,7 +21,10 @@
      for different hardware and product builds. -->
 <resources>
 
-  <!-- If true, enable the advance anti-falsing classifier on the lockscreen. On some devices it
+    <!-- Whether to show VoLTE icon in the status bar -->
+    <bool name="config_display_volte">true</bool>
+
+    <!-- If true, enable the advance anti-falsing classifier on the lockscreen. On some devices it
          does not work well, particularly with noisy touchscreens. Note that disabling it may
          increase the rate of unintentional unlocks. -->
     <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
@@ -36,3 +39,4 @@
     <!-- System icon area layout weight -->
     <item name="system_icon_area_weight" format="float" type="integer">1.25</item>
 </resources>
+

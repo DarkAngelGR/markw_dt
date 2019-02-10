@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_markw.mk
+    $(LOCAL_DIR)/revengeos_markw.mk
