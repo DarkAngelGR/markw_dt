@@ -42,5 +42,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := Xiaomi/markw/markw:6.0.1/MMB29M/V10.2.1.0.MBEMIXM:user/release-keys
 
 # Its Official DotOS
-#DOT_OFFICIAL := true
+export DOT_OFFICIAL := true
+# BootAnimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
