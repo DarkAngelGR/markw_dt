@@ -12,6 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq (pixeldust_markw,$(TARGET_PRODUCT))
+ifeq (bootleg_markw,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/bootleg_markw.mk
 endif
