@@ -12,16 +12,16 @@
 * GNU General Public License for more details.
 *
 * You should have received a copy of the GNU General Public License
-* along with this program. If not, see <http://www.gnu.org/licenses/>.
+* along with this program. If not, see <http://www.gnu.com/licenses/>.
 *
 */
-package com.markw.settings.device;
+package com.lineageos.settings.device;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
+import android.support.v7.preference.PreferenceManager;
 import android.provider.Settings;
 import android.text.TextUtils;
 
@@ -48,7 +48,14 @@ public class Startup extends BroadcastReceiver {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 
         VibratorStrengthPreference.restore(context);
-        YellowTorchBrightnessPreference.restore(context);
         WhiteTorchBrightnessPreference.restore(context);
+        YellowTorchBrightnessPreference.restore(context);
+        DeviceSettings.restore(context);
+        DeviceSettings.restoreSpectrumProp(context);
+        boolean usbFastchargeStoredValue = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(DeviceSettings.USB_FASTCHARGE_KEY, false);
+        Utils.writeValue(DeviceSettings.USB_FASTCHARGE_PATH, usbFastchargeStoredValue ? "1" : "0" );
+        boolean shouldFixSlowWakeup = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(DeviceSettings.KEY_SLOW_WAKEUP_FIX, false);
+        Utils.writeValue(DeviceSettings.FILE_LEVEL_WAKEUP, shouldFixSlowWakeup ? "1" : "0" );
+        DisplayCalibration.restore(context);
     }
 }
