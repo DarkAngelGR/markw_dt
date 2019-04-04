@@ -1,26 +1,9 @@
-Copyright 2017 - LineageOS
+A small explaination about rhe branches
+AOSiP-P, Superior-P, lineage-16.0 are based on @freemarkw and @Granragw sources so when using them I auggest you to use the vendor tree from @Granrage
+The other branches are based on @SonicBSV sources so I recommend using his vendor tree too
 
-# Device Tree for Xiaomi Redmi 4 Prime/wt88553 (MARKW) 
+NOTE!!!!!
+ALL BRANCHES USES MY KERNEL (Olympian kernel) SO IF TOU WANT TO CHANGE KERNEL YOU HAVE TO MAKE THE PROPER MODIFICATIONS AT BoardConfig.mk
 
-## Spec Sheet
 
-| Feature                 | Specification                     |
-| :---------------------- | :-------------------------------- |
-| CPU                     | Octa-core 2.0 GHz Cortex-A53      |
-| Chipset                 | Qualcomm MSM8953 Snapdragon 625   |
-| GPU                     | Adreno 506                        |
-| RAM                     | 3 GB                              |
-| Shipped Android Version | 6.0.1 with MIUI 8/9/10            |
-| ROM                     | 32 GB                             |
-| MicroSD                 | Up to 256 GB                      |
-| Battery                 | 4100 mAh (non-removable)          |
-| Dimensions              | 141 x 69.6 x 8.9 mm               |
-| Display                 | 1920x1080 pixels, 5" IPS          |
-| Rear Camera             | 13 MP - s5k3l8                    |
-| LED flash               | Yes                               |
-| Front Camera            | 5 MP - ov5670                     |
-| Release Date            | November 2016                     |
-
-## Device Picture
-
-![Xiaomi Redmi 4 Prime](http://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-4-prime-2.jpg "Xiaomi Redmi 4 Prime")
+For those who want to see the specs of Redmi 4 Prime (markw) here is the link https://m.gsmarena.com/xiaomi_redmi_4_prime-8263.php
