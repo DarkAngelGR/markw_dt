@@ -1,5 +1,5 @@
-A small explaination about rhe branches
-AOSiP-P, Superior-P, lineage-16.0 are based on @freemarkw and @Granragw sources so when using them I auggest you to use the vendor tree from @Granrage
+A small explaination about the branches.
+AOSiP-P, Superior-P, lineage-16.0 are based on @freemarkw and @Granragw sources so when using them I auggest you to use the vendor tree from @Granrage.
 The other branches are based on @SonicBSV sources so I recommend using his vendor tree too
 
 NOTE!!!!!
