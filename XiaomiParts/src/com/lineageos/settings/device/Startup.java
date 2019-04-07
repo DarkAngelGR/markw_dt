@@ -12,16 +12,16 @@
 * GNU General Public License for more details.
 *
 * You should have received a copy of the GNU General Public License
-* along with this program. If not, see <http://www.gnu.org/licenses/>.
+* along with this program. If not, see <http://www.gnu.com/licenses/>.
 *
 */
-package com.markw.settings.device;
+package com.lineageos.settings.device;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
+import android.support.v7.preference.PreferenceManager;
 import android.provider.Settings;
 import android.text.TextUtils;
 
@@ -48,7 +48,7 @@ public class Startup extends BroadcastReceiver {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 
         VibratorStrengthPreference.restore(context);
-        YellowTorchBrightnessPreference.restore(context);
-        WhiteTorchBrightnessPreference.restore(context);
+        DisplayCalibration.restore(context);
+        BatteryChargingLimiterPreference.restore(context);
     }
 }
