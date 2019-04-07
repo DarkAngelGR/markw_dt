@@ -48,4 +48,6 @@
        Used to decide if the user can change the colors -->
   <bool name="config_multiColorNotificationLed">true</bool>
 
+    <!-- Whether device supports an alt. ambient display -->
+    <bool name="config_alt_ambient_display">false</bool>
 </resources>

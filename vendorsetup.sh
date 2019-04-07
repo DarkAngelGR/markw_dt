@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo bootleg_markw-userdebug
+add_lunch_combo colt_markw-userdebug
