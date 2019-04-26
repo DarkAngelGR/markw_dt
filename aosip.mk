@@ -22,14 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/markw/device.mk)
 
 # Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4 Prime
 PRODUCT_DEVICE := markw
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_markw
+PRODUCT_NAME := aosip_markw
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
