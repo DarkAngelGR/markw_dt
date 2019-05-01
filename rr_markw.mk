@@ -19,8 +19,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common ViperOS stuff.
-$(call inherit-product, vendor/viper/config/common_full_phone.mk)
+# Inherit some common RR stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Inherit from markw device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -31,11 +31,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Xiaomi
-PRODUCT_NAME := viper_markw
+PRODUCT_NAME := rr_markw
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_DEVICE := markw
-PRODUCT_MODEL := Redmi 4
+PRODUCT_MODEL := Redmi 4 Prime
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -43,9 +43,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="markw-user 6.0.1 MMB29M V9.6.2.0.MBECNFD release-keys" \
     TARGET_DEVICE="markw" 
 
-#Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.viper.maintainer=SonicBSV
-    
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Xiaomi/markw/markw:6.0.1/MMB29M/V9.6.2.0.MBECNFD:user/release-keys
