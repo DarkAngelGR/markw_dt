@@ -183,6 +183,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido
 
+# Xiaomi Shit
+PRODUCT_PACKAGES += \
+    XiaomiShit
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
