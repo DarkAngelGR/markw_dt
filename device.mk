@@ -183,9 +183,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido
 
-# Xiaomi Shit
+# YUSettings
 PRODUCT_PACKAGES += \
-    XiaomiShit
+    YUSettings
 
 # FM
 PRODUCT_PACKAGES += \
