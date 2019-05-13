@@ -39,7 +39,7 @@
                 android:value="com.android.settings.category.ia.system" />
             <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_mi" />
+                android:resource="@drawable/launcher" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/advanced_settings_summary"/>
         </activity-alias>

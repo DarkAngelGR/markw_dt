@@ -3,6 +3,6 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/menu_reset"
           android:title="@string/menu_reset"
-          android:icon="@drawable/ic_restore"
+          android:icon="@drawable/launcher"
           android:showAsAction="always"/>
 </menu>
