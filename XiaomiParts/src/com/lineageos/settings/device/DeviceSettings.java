@@ -41,6 +41,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.util.Log;
 
+import com.lineageos.settings.device.sound.SoundControlActivity;
+
 public class DeviceSettings extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
@@ -65,6 +67,16 @@ public class DeviceSettings extends PreferenceFragment implements
              @Override
              public boolean onPreferenceClick(Preference preference) {
                  Intent intent = new Intent(getActivity().getApplicationContext(), DisplayCalibration.class);
+                 startActivity(intent);
+                 return true;
+             }
+        });
+
+        PreferenceScreen mSoundControlPref = (PreferenceScreen) findPreference("sound_control");
+        mSoundControlPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+             @Override
+             public boolean onPreferenceClick(Preference preference) {
+                 Intent intent = new Intent(getActivity().getApplicationContext(), SoundControlActivity.class);
                  startActivity(intent);
                  return true;
              }
