@@ -24,7 +24,9 @@ package_resource_overlays := $(strip \
     $(wildcard $(foreach dir, $(DEVICE_PACKAGE_OVERLAYS), \
       $(addprefix $(dir)/, packages/apps/XiaomiParts/res))))
 
-LOCAL_RESOURCE_DIR := $(package_resource_overlays) $(LOCAL_RESOURCE_DIR)
+LOCAL_RESOURCE_DIR := \
+    $(TOP)/packages/resources/devicesettings/res \
+    $(LOCAL_PATH)/res
 
 LOCAL_PROGUARD_ENABLED := disabled
 LOCAL_DEX_PREOPT := false
