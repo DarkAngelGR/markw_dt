@@ -1,5 +1,5 @@
 #
-# Copyright 2018 The Android Open Source Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +14,17 @@
 # limitations under the License.
 #
 
-add_lunch_combo superior_markw-user
-add_lunch_combo superior_markw-eng
-add_lunch_combo superior_markw-userdebug
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from YUREKA2 device
+$(call inherit-product, device/xiaomi/markw/device.mk)
+
+# Device identifier. This must come after all inclusions
+TARGET_VENDOR := Xiaomi
+PRODUCT_DEVICE := markw
+PRODUCT_NAME := full_markw
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi 4 Prime
+PRODUCT_MANUFACTURER := Xiaomi
