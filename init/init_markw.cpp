@@ -38,13 +38,6 @@
 #include "vendor_init.h"
 #include "property_service.h"
 
-char const *heapstartsize;
-char const *heapgrowthlimit;
-char const *heapsize;
-char const *heaptargetutilization;
-char const *heapminfree;
-char const *heapmaxfree;
-
 using android::base::GetProperty;
 using android::base::ReadFileToString;
 using android::init::property_set;
@@ -68,8 +61,8 @@ void sfn_hack()
 
     // override specific props for to bypass the SafetyNet check without Magisk (in addition, need to replace selinux into enforcing)
     if (product == "markw") {
-        property_set("ro.boot.verifiedbootstate", "green");
-        property_set("ro.boot.veritymode", "enforcing");
+        // property_set("ro.boot.verifiedbootstate", "green");
+        // property_set("ro.boot.veritymode", "enforcing");
         property_override("ro.build.type", "user");
     }
 }
