@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo superior_markw-userdebug
+add_lunch_combo cerberus_markw-userdebug

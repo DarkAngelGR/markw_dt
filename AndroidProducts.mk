@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_markw.mk
+    $(LOCAL_DIR)/cerberus_markw.mk
