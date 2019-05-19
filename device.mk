@@ -544,9 +544,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# XiaomiParts
+# Dirac
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    Dirac
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/markw/markw-vendor.mk)
