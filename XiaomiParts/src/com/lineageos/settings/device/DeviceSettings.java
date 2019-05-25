@@ -146,6 +146,7 @@ public class DeviceSettings extends PreferenceFragment implements
             SharedPreferences.Editor prefChange = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
             prefChange.putBoolean(KEY_GLOVE_MODE, enabled).commit();
             Utils.writeValue(GLOVE_MODE_FILE, enabled ? "1" : "0");
+        }
         return true;
         } else if (preference == mFastcharge) {
             boolean value = (Boolean) newValue;
@@ -156,6 +157,4 @@ public class DeviceSettings extends PreferenceFragment implements
             editor.commit();
             return true;
     }
-return false;
-}
 }
